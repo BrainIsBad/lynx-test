@@ -1,6 +1,8 @@
 import React from 'react';
 
-import {Form} from './components';
+import {Form, FileList} from './components';
+
+import {FilesProvider} from './context/FilesContext';
 
 import './index.css';
 
@@ -13,8 +15,11 @@ function App() {
                 File Uploader
             </h1>
 
-            <Form />
+            <FilesProvider>
+                <Form />
 
+                <FileList />
+            </FilesProvider>
         </div>
     );
 }

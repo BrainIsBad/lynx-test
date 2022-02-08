@@ -6,8 +6,7 @@ const schema = new Schema({
         required: true
     },
     size: {
-        type: Number,
-        required: true
+        type: Number
     },
     buffer: {
         type: Buffer,
